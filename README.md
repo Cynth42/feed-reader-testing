@@ -4,11 +4,19 @@ Udacity Front-End Web Developer Nanodegree program
 
 This project is an exercise in implementing front-end testing with Jasmine.
 
+## Table of Contents
+
+* [Installation](#installation)
+* [Used](#used)
+* [Credits](#credits)
+* [References](#references)
+
+
 ## Installation
 
 * To view the testing functionality, clone the repo. 
 * Load index.html in a browser, scroll to the bottom of the feeds to see the Jasmine reporter. 
-* Check out jasmine/spec/feedreader.js to see the tests we are running and get started.
+* Check out jasmine/spec/feedreader.js to see the tests that is running and get started.
 
 ## Used
 
@@ -22,6 +30,10 @@ This project is an exercise in implementing front-end testing with Jasmine.
 ## Credits
 
 Grow with Google and Udacity Front End Scholarship Program
+
+## References
+
+Used Knowledge, MDN and Matt's walkthorough on feed reader testing as a guide - :) 
 
 
 
