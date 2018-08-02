@@ -10,7 +10,7 @@
  */
 $(function() {
   'use strict';
-    // Test suite for RSS feed variable
+    //Test suite for RSS feed variable
     describe('RSS Feeds', () => {
 
       //Checks if allFeeds variable is defined and not empty
@@ -39,7 +39,7 @@ $(function() {
     //Test suite for the apps menu functionality
     describe('The menu', () => {
 
-      // Ensures that default state of menu is hidden on page Load
+      //Ensures that default state of menu is hidden on page Load
       it('is hidden by default on page load', () => {
         const body = document.querySelector('body');
         expect(body.classList.contains('menu-hidden')).toBe(true);
@@ -86,6 +86,7 @@ $(function() {
              });
           });
         });
+      
         //Compares the two loaded feeds content to see if they change
         it('should change content when new feed is loaded', function() {
           expect(firstNewFeed).not.toEqual(secondNewFeed);
