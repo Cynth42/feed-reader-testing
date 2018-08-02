@@ -15,7 +15,7 @@ $(function() {
     * feeds definitions, the allFeeds variable in our application.
     */
     // Test suite for RSS feed variable
-    describe('RSS Feeds', function() {
+    describe('RSS Feeds', () => {
         /* This is our first test - it tests to make sure that the
          * allFeeds variable has been defined and that it is not
          * empty. Experiment with this before you get started on
@@ -24,7 +24,7 @@ $(function() {
          * page?
          */
         //Check if allFeeds variable is defined and not empty
-        it('are defined', function() {
+        it('are defined', () => {
             expect(allFeeds).toBeDefined();
             expect(allFeeds.length).not.toBe(" ");
         });
@@ -35,7 +35,7 @@ $(function() {
          * and that the URL is not empty.
          */
          //Check if feed's url property is defined and not empty
-         it('have URLs defined', function() {
+         it('have URLs defined', () => {
            for (let feed of allFeeds) {
              expect(feed.url).toBeDefined();
              expect(feed.url.length).not.toBe(" ");
@@ -48,7 +48,7 @@ $(function() {
          * and that the name is not empty.
          */
          //Ensures that name is defined and not empty
-         it('has name defined', function() {
+         it('has name defined', () => {
            for (let feed of allFeeds) {
              expect(feed.name).toBeDefined();
              expect(feed.name.length).not.toBe(" ");
@@ -59,7 +59,7 @@ $(function() {
 
     /* TODO: Write a new test suite named "The menu" */
     //Test suite for the apps menu functionality
-    describe('The menu', function() {
+    describe('The menu', () => {
 
         /* TODO: Write a test that ensures the menu element is
          * hidden by default. You'll have to analyze the HTML and
@@ -67,7 +67,7 @@ $(function() {
          * hiding/showing of the menu element.
          */
          // Ensures that default state of menu is hidden on page Load
-          it('is hidden by default on page load', function() {
+          it('is hidden by default on page load', () => {
            const body = document.querySelector('body');
            expect(body.classList.contains('menu-hidden')).toBe(true);
           });
@@ -79,7 +79,7 @@ $(function() {
           * clicked and does it hide when clicked again.
           */
           //Check that menu toggles on and off from multiple clicks as expected
-          it('changes visibility when it is clicked', function() {
+          it('changes visibility when it is clicked', () => {
 
             const menuIcon = document.querySelector('.menu-icon-link');
             const body = document.querySelector('body');
@@ -102,15 +102,15 @@ $(function() {
            */
 
       //test suite for initial load of feed
-     describe('Initial Entries', function() {
+     describe('Initial Entries', () => {
 
         //Loads feedList and wait until work is completed
-       beforeEach(function(done) {
+       beforeEach(done => {
           loadFeed(0, done);
        });
 
-        //Checks that completed work contains content
-       it('should have atleast one .entry within .feed when loadFeed is called', function() {   
+        //Ensures that completed work contains content
+       it('should have atleast one .entry within .feed container when loadFeed is called', () => {
          const feedContainer = document.querySelector('.feed');
          expect(feedContainer.children.length).toBeGreaterThan(0);
        })
@@ -123,31 +123,8 @@ $(function() {
            * Remember, loadFeed() is asynchronous.
            */
       //Test suite for loading new content after initial load
-    // describe('New Feed Selection', function() {
-      //    const feedContainer = document.querySelector('.feed');
-      //    const firstNewFeed = [];
+  //  describe('New Feed Selection', () => {
+  //    let content
 
-      //    beforeEach(function (done) {
-
-            //Loads first new feed
-      //        loadFeed(0);
-
-            //Add values of first new feed into array
-      //         Array.from(feedContainer.children).forEach(content => {
-            //  for (let content of firstNewFeed) {
-        //        firstNewFeed.push(content.innerText);
-      //        });
-
-            //Load ssecond new feed
-        //    loadFeed(1, done);
-    //      });
-
-          //compare first feed against new feed content
-      //      it('should change content when new feed is loaded', function() {
-          //  for (let content of firstNewFeed) {
-        //     Array.from(feedContainer.children).forEach(content, index) => {
-        //      expect(content.innerText).not.toEqual(firstNewFeed[index}]);
-        //    };
-        //  });
-    //  });
+  //  });
 }());
