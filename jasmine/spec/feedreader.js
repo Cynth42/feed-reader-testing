@@ -102,19 +102,19 @@ $(function() {
            */
 
       //test suite for initial load of feed
-    //  describe('Initial Entries', function() {
+     describe('Initial Entries', function() {
 
         //Loads feedList and wait until work is completed
-    //    beforeEach(function(done) {
-      //    loadFeed(0, done);
-      //  });
+       beforeEach(function(done) {
+          loadFeed(0, done);
+       });
 
         //Checks that completed work contains content
-    //    it('should have atleast one .entry within .feed when loadFeed is called', function() {
-    //      const feedContainer = document.querySelector('.feed');
-    //      expect(feedContainer.children.length).toBeGreaterThan(0);
-    //    })
-    //  });
+       it('should have atleast one .entry within .feed when loadFeed is called', function() {   
+         const feedContainer = document.querySelector('.feed');
+         expect(feedContainer.children.length).toBeGreaterThan(0);
+       })
+    });
 
       /* TODO: Write a new test suite named "New Feed Selection" */
 
