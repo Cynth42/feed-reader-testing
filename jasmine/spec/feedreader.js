@@ -78,10 +78,10 @@ $(function() {
         //Loads first new feed
         loadFeed(0, () => {
          //Using the window object to point to the DOM document from knowledge and looked it up on MDN Doc
-          window.firstNewFeed = document.querySelector('.entry').innerHTML;
+          window.firstNewFeed = document.querySelector('.entry').innerText;
            //Loads second new feed
             loadFeed(1, () => {
-              window.secondNewFeed = document.querySelector('.entry').innerHTML;
+              window.secondNewFeed = document.querySelector('.entry').innerText;
               done();
              });
           });
