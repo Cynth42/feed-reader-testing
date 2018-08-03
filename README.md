@@ -29,7 +29,7 @@
 
 ## Credits
 
-Grow with Google and Udacity Front End Scholarship Program
+Special thanks and appreciation to the Grow with Google and Udacity Front End Scholarship Program!
 
 ## References
 
