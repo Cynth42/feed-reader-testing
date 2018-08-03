@@ -45,7 +45,7 @@ $(function() {
         expect(body.classList.contains('menu-hidden')).toBe(true);
       });
 
-      //Check that menu toggles on and off from multiple clicks as expected
+      //Checks that menu toggles on and off from multiple clicks as expected
       it('changes visibility when it is clicked', () => {
         const menuIcon = document.querySelector('.menu-icon-link');
         const body = document.querySelector('body');
@@ -58,7 +58,7 @@ $(function() {
       });
     });
 
-    //test suite for initial load of feed
+    //Test suite for initial load of feed
     describe('Initial Entries', () => {
       //Loads feedList and wait until work is completed
       beforeEach(done => {
@@ -87,7 +87,7 @@ $(function() {
           });
         });
       
-        //Compares the two loaded feeds content to see if they change
+        //Compares the two loaded feeds content to see if they'll change
         it('should change content when new feed is loaded', function() {
           expect(firstNewFeed).not.toEqual(secondNewFeed);
         });
