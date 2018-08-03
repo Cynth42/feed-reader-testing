@@ -1,8 +1,8 @@
 # Feed Reader Testing: Project 4
 
-Udacity Front-End Web Developer Nanodegree program
+### Udacity Front-End Web Developer Nanodegree program
 
-This project is an exercise in implementing front-end testing with Jasmine.
+### This project is an exercise in implementing front-end testing with Jasmine.
 
 ## Table of Contents
 
@@ -33,7 +33,7 @@ Grow with Google and Udacity Front End Scholarship Program
 
 ## References
 
-Used Knowledge, MDN and Matt's walkthorough on feed reader testing as a guide - :) 
+Used MDN, Course on JavaScript testing, Knowledge and Matt's walkthorough on feed reader testing as a guide - :) 
 
 
 
