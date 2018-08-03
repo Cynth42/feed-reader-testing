@@ -20,7 +20,7 @@
 
 ## Used
 
-1. [Jasmine](https://pages.github.com/) - the testing framework
+1. [Jasmine](https://jasmine.github.io/) - the testing framework
 2. JavaScript
 3. jQuery
 4. HTML
