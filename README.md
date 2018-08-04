@@ -33,7 +33,7 @@ Special thanks and appreciation to the Grow with Google and Udacity Front End Sc
 
 ## References
 
-Used MDN, Course on JavaScript testing, Knowledge and Matt's walkthorough on feed reader testing as a guide - :) 
+Used MDN Docs, Course on JavaScript testing, knowledge and Matt's walkthorough on feed reader testing as a guide - :) 
 
 
 
