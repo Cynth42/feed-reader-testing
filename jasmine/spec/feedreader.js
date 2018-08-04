@@ -19,7 +19,7 @@ $(function() {
         expect(allFeeds.length).not.toBe(0);
       });
 
-      //Checks if feed's url is defined and not empty
+      //Checks if feed's url's property is defined and not empty
       it('have URLs defined', () => {
         for (let feed of allFeeds) {
           expect(feed.url).toBeDefined();
@@ -27,7 +27,7 @@ $(function() {
         }
       });
 
-      //Ensures that name is defined and not empty
+      //Ensures that name's property is defined and not empty
       it('has name defined', () => {
         for (let feed of allFeeds) {
           expect(feed.name).toBeDefined();
