@@ -78,7 +78,6 @@ $(function() {
       beforeEach(done => {
         //Loads first new feed
         loadFeed(0, () => {
-         //Using the window object to point to the DOM document from knowledge and looked it up on MDN Doc
           firstNewFeed = document.querySelector('.entry').innerText;
            //Loads second new feed
             loadFeed(1, () => {
