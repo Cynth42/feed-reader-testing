@@ -16,14 +16,14 @@ $(function() {
       //Checks if allFeeds variable is defined and not empty
       it('are defined', () => {
         expect(allFeeds).toBeDefined();
-        expect(allFeeds.length).not.toBe(" ");
+        expect(allFeeds.length).not.toBe(0);
       });
 
       //Checks if feed's url is defined and not empty
       it('have URLs defined', () => {
         for (let feed of allFeeds) {
           expect(feed.url).toBeDefined();
-          expect(feed.url.length).not.toBe(" ");
+          expect(feed.url.length).not.toBe(0);
         }
       });
 
@@ -31,7 +31,7 @@ $(function() {
       it('has name defined', () => {
         for (let feed of allFeeds) {
           expect(feed.name).toBeDefined();
-          expect(feed.name.length).not.toBe(" ");
+          expect(feed.name.length).not.toBe(0);
         }
       });
     });
@@ -64,24 +64,25 @@ $(function() {
       beforeEach(done => {
         loadFeed(0, done);
       });
-
+      
       //Ensures that completed work contains content
-      it('should have atleast one entry within feed container when loadFeed is called', () => {
-        const feedContainer = document.querySelector('.feed');
-        expect(feedContainer.children.length).toBeGreaterThan(0);
+      it('should have at least one .entry within .feed container when loadFeed() is called', () => {
+        const feedContainer = document.querySelectorAll('.feed .entry');
+        expect(feedContainer.length).toBeGreaterThan(0);
       })
     });
 
     //Test suite for loading new content after initial load
     describe('New Feed Selection', () => {
+      let firstNewFeed, secondNewFeed;
       beforeEach(done => {
         //Loads first new feed
         loadFeed(0, () => {
          //Using the window object to point to the DOM document from knowledge and looked it up on MDN Doc
-          window.firstNewFeed = document.querySelector('.entry').innerText;
+          firstNewFeed = document.querySelector('.entry').innerText;
            //Loads second new feed
             loadFeed(1, () => {
-              window.secondNewFeed = document.querySelector('.entry').innerText;
+              secondNewFeed = document.querySelector('.entry').innerText;
               done();
              });
           });
